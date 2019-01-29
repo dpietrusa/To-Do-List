@@ -18,6 +18,7 @@ public class ToDoList {
         for (int i = 0; i <= toDoListArray.length; i++) {
             if (toDoListArray[i] == null) {
                 toDoListArray[i] = item;
+                break;
             }
         }
     }
@@ -25,5 +26,6 @@ public class ToDoList {
     public boolean listFull() {return numberOfItems() == toDoListArray.length;}
 
     public boolean hasRoom() {return !listFull();}
+
 
 }

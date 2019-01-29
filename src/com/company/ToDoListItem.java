@@ -15,11 +15,11 @@ public class ToDoListItem {
     public void setState(String itemState) {
         state = itemState;
     }
-    public String getState() {return description;}
+    public String getState() {return state;}
 
 
     public String getDetails() {
-        return ("Item Description: " + description + "\nItem State:");
+        return ("Item Description: " + description + "\nItem State:" + state);
     }
 
 
